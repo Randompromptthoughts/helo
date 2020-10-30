@@ -2,37 +2,225 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 10%, rgba(148,187,233,1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-page {
+  position: relative;
+  top: 200px;
+  left: 650px;
+  bottom: 170px;
+  height: 500px;
+  width: 600px;
+  color: #f2f2f2;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 6%, rgba(255,151,112,1) 100%);
+  box-shadow: 4px, 4px, 4px, 0px, #8b503a;
+  border: 2px solid black;
+  border-radius: 3%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.helo-text {
+  font-size: 66px;
+  position: relative;
+  top: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.password {
+  position: relative;
+  top: 78px;
+  left: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.username {
+  position: relative;
+  top: 120px;
+  right: 95px;
+}
+
+.register-buttons {
+  position: relative;
+  top: 140px;
+  right: 185px;
+  color: #f2f2f2;
+  background-color: #403d39;
+  border-radius: 7%;
+  height: 35px;
+  width: 85px;
+}
+
+.register-buttons:hover {
+  background-color: rgb(148,187,233,1);
+  color: #444445;
+}
+
+input {
+  position: relative;
+  top: 80px;
+  left: 75px;
+  height: 22px;
+}
+
+.nav-bar {
+  position: relative;
+  height: 935px;
+  width: 125px;
+  margin-bottom: 0px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 10%, rgba(148,187,233,1) 100%);
+  border: 2px solid #403d39;
+}
+
+.profile-pic {
+  height: 93px;
+  width: 93px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 25px;
+  border: 1px solid #403d39;
+}
+
+.dash-button {
+  position: relative;
+  top: 60px;
+  right: 3px;
+  height: 35px;
+  color: #f2f2f2;
+  background-color: #403d39;
+  border-radius: 7%;
+}
+
+.dash-button:hover {
+  background-color: rgba(255,151,112,1);
+  color: #444445;
+}
+
+.post-button {
+  position: relative;
+  top: 125px;
+  height: 35px;
+  color: #f2f2f2;
+  background-color: #403d39;
+  border-radius: 7%;
+}
+
+.post-button:hover {
+  background-color: rgba(255,151,112,1);
+  color: #444445;
+}
+
+.logout-button {
+  height: 35px;
+  background-color: #ffd670;
+  border-radius: 9%;
+  position: absolute;
+  top: 825px;
+  right: 35px;
+}
+
+.logout-button:hover {
+  background-color: #f2f2f2;
+}
+
+.link {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.link-logout {
+  text-decoration: none;
+  color: #403d39;
+  font-weight: 600;
+}
+
+.dashboard {
+  position: relative;
+  bottom: 900px;
+}
+
+.post {
+  
+  
+}
+
+.post-box {
+  border: 1px solid black;
+  border-radius: 13%;
+  height: 220px;
+  width: 280px;
+  background-color: rgba(148,187,233,1);
+  margin: auto;
+ 
+}
+
+.post-input {
+  width: 16vw;
+  overflow: scroll;
+  position: relative;
+  right: 40px;
+}
+
+.edit-button {
+  background-color: #403d39;
+  color: #f2f2f2;
+  border-radius: 12%;
+  position: relative;
+  right: 10vw;
+}
+
+.edit-button:hover {
+  background-color: #f2f2f2;
+  color: #403d39;
+}
+
+.edit-button-2 {
+  background-color: #403d39;
+  color: #f2f2f2;
+  position: relative;
+  top: 13vh;
+  right: 16px;
+  border-radius: 12%;
+}
+
+.delete-button {
+  background-color: #403d39;
+  color: #f2f2f2;
+  border-radius: 12%;
+  position: relative;
+  right: 8vw;
+}
+
+.delete-button-2 {
+  background-color: #403d39;
+  color: #f2f2f2;
+  position: relative;
+  top: 13vh;
+  left: 10px;
+  border-radius: 12%;
+}
+
+.delete-button:hover {
+  background-color: #f2f2f2;
+  color: #403d39
+}
+
+.share-button {
+  background-color: #403d39;
+  color: #f2f2f2;
+  border-radius: 12%;
+  position: relative;
+  left: 80px;
+  top: 80px;
+}
+
+.share-button:hover {
+  background-color: #f2f2f2;
+  color: #403d39;
 }

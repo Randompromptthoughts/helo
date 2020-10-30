@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const massive = require('massive'),
+  session = require('express-session'),
   axios = require('axios'),
   controller = require('./controller'),
   express = require('express'),
@@ -25,8 +26,15 @@ const massive = require('massive'),
     console.log('db connected securely')
   });
 
+//Auth
   app.post('/auth/register', controller.register);
   app.post('/auth/login', controller.login);
   app.get('/auth/logout', controller.logout);
+
+  //Post
+  app.get('/api/posts', controller.getUserPost);
+  app.post('/api/posts', controller.createPost);
+  app.put('/api/post/:id', controller.updatePost);
+  app.delete('/api/posts/:id', controller.deletePost);
 
   app.listen(port, () => console.log(`This bad boy is listening on ${port}`));
